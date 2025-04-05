@@ -9,6 +9,7 @@ def index():
         {"nome": "Willian" , "membro_ativo": True},
         {"nome": "Coda Fofo" , "membro_ativo": False},
         {"nome": "Yuri" , "membro_ativo": False},
+        {"nome": "Teste", "membro_ativo":True},
     ]
     return render_template("index.html", titulo = titulo, usuarios = usuarios)
 
