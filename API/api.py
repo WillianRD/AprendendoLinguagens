@@ -1,4 +1,9 @@
 import requests
+import secrets
+
+APP_SECRET_KEY = "chave"
+
+print(secrets.token_hex(32))
 
 def getApi():
     url = "https://api.ai-cats.net/v1/cat"
@@ -24,5 +29,3 @@ def getApi():
     except requests.exceptions.RequestException as e:
         print("Erro na requisição:", e)
         return None
-
-getApi()
