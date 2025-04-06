@@ -1,0 +1,6 @@
+info = input('Digite algo')
+print("Esse tipo é: " ,type(info))
+print("Possui espaço: " , info.isspace())
+print(info.isalnum())
+print(info.islower())
+print(info.isupper())
